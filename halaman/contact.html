@@ -1,0 +1,37 @@
+<div style="text-align: center;">
+    <h2><span class="fa fa-envelope-o"></span><br>Send me a Message</h2>
+    <p>Mohon maaf, halaman ini sedang tidak bisa digunakan!</p>
+</div>
+<div class="row" style="margin-top: 20px;">
+	<div class="col-md-2"></div>
+	<div class="col-md-8" style="padding: 20px; background-color: white; box-shadow: 1px 1px 7px gray;">
+		<!-- <form name="contactForm" ng-submit="submitform()"> -->
+		<form>
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-md-6">
+					Nama:<br>
+					<input type="text" class="form-control" name="nama" ng-model="pesan.nama" placeholder="Masukan nama Anda" disabled>
+					<label class="text-danger" ng-show="errorNama">{{ errorNama }}</label>
+				</div>
+				<div class="col-md-6">
+					Kontak:<br>
+					<input type="text" class="form-control" name="kontak" ng-model="pesan.kontak" placeholder="Masukan kontak yang bisa dihubungi" disabled>
+					<label class="text-danger" ng-show="errorKontak">{{ errorKontak }}</label>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-md-12">
+					Pesan:<br>
+					<textarea class="form-control" name="pesan" ng-model="pesan.pesan" placeholder="Ketik apapun yang ingin kamu sampaikan disini" disabled></textarea>
+					<label class="text-danger" ng-show="errorPesan">{{ errorPesan }}</label>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-primary" name="kirim" ng-model="pesan.kirim" value="kirim" disabled>Kirim Pesan</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-2"></div>
+</div>
